@@ -56,20 +56,23 @@ p.subtitle {
     justify-content: space-around
 }
 
-button.boton-principal {
+.boton-principal {
     font-size: 20px;
     padding: 15px 30px;
     background-color: white;
     border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: none;
 }
 
 .boton-principal:hover {
     background-color: #D4AF37;
     color: white;
 }
-
 .video-promocional {
     display: flex;
 
