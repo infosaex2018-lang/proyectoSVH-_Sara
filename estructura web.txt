@@ -1,0 +1,42 @@
+HEADER
+│
+├── Logo
+├── Inicio
+├── Mundos
+├── Especies
+├── Agencia
+├── Blog
+└── Quiénes somos
+
+↓
+
+HERO
+Gran imagen
+Título
+Descripción
+Botón
+
+↓
+
+DESTACADO
+Vídeo de los Lumienses
+Descripción
+Botón
+
+↓
+
+NUEVAS ESPECIES
+4 tarjetas
+
+↓
+
+MUNDOS DESTACADOS
+4 tarjetas
+
+↓
+
+BLOG
+
+↓
+
+FOOTER

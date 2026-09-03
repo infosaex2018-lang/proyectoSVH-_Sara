@@ -1,0 +1,811 @@
+body {
+    background-color: #08111F;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url("../imagenes/espacio1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+
+}
+
+h1.titulo {
+    font-size: 100px;
+}
+
+p.slogan {
+    font-size: 50px;
+}
+
+p.subtitle {
+    font-size: 20px;
+    color: white;
+    justify-content: space-around
+}
+
+button.boton-principal {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton-principal:hover {
+    background-color: #D4AF37;
+    color: white;
+}
+
+.video-promocional {
+    display: flex;
+
+    padding: 30px;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.video-promocional:hover {
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+}
+
+.videoLumienses {
+    margin-right: 10vw;
+}
+
+.informacionLumienses {
+    text-align: center;
+    padding: 20px;
+}
+
+h2.titulo {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.boton-secundario {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 12px 25px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #333 !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton-secundario:hover {
+    background-color: #D4AF37;
+    color: white !important;
+}
+.cards {
+    color:white;
+    font-size:18px;
+    padding:20px;
+}
+
+.cards-grid {
+
+    margin:0 10px;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+
+.card {
+
+    width:320px;
+    height:500px;
+
+    border:2px solid #5DBBFF;
+    border-radius:15px;
+    overflow:hidden;
+
+    display:flex;
+    align-items:flex-end;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+}
+
+
+.card:hover {
+
+    border-color:#D4AF37;
+
+}
+
+
+.card-content {
+
+    width:100%;
+    padding:25px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(8,17,31,0.95)
+    );
+
+    color:white;
+text-align:center;
+}
+
+.card-krynar{
+    background-image:url("../imagenes/krynar.jpeg");
+}
+
+.card-layen{
+    background-image:url("../imagenes/layen.jpeg");
+}
+
+.card-portha{
+    background-image:url("../imagenes/portha.jpeg");
+}
+.blog {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 60px;
+    padding: 0 20px;
+    gap: 80px;
+}
+.image-blog{
+    padding:20px;
+}
+
+.image-blog img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.main-sentence {
+    color: #5DBBFF;
+    text-align: center;
+    font-size: 20px;
+}
+.blog-content a,
+.blog-content p {
+    text-decoration:none;
+    color:white;
+}
+.blog {
+    align-items: center;
+}
+.blog p{
+    font-size: 20px;
+    text-align: justify;
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:80px;
+    padding:50px;
+
+    background-color:#050C18;
+
+    color:white;
+
+}
+
+.footer-content{
+
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+.footer-logo{
+
+    flex:2;
+
+}
+
+.footer-logo p{
+
+    margin-top:20px;
+    line-height:1.6;
+
+}
+
+.footer-links,
+.footer-project{
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.footer-links h3,
+.footer-project h3{
+
+    margin-bottom:20px;
+
+    color:#D4AF37;
+
+}
+
+.footer-links a,
+.footer-project a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a:hover,
+.footer-project a:hover{
+
+    color:#D4AF37;
+
+}
+
+footer hr{
+
+    margin:40px 0;
+
+    border:none;
+
+    border-top:1px solid #2B3A52;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#B8C0CC;
+
+}
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .hero{
+        min-height:70vh;
+        padding:40px 20px;
+    }
+
+    h1.titulo{
+        font-size:50px;
+    }
+
+    p.slogan{
+        font-size:24px;
+    }
+
+    p.subtitle{
+        font-size:16px;
+    }
+    .video-promocional{
+    flex-direction:column;
+}
+
+.videoLumienses video{
+    width:100%;
+    height:auto;
+} 
+
+}
+/* ===========================
+   WORLDS PAGE
+=========================== */
+
+.worlds-intro {
+    text-align: center;
+    color: white;
+    padding: 60px 30px 40px;
+}
+
+.worlds-intro h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.worlds-intro p {
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* CONTENEDOR DE LOS MUNDOS */
+
+.worlds {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* CADA MUNDO */
+
+.world {
+    width: 100%;
+    min-height: 500px;
+
+    margin-bottom: 50px;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* IMÁGENES DE LOS MUNDOS */
+
+.world-krynar {
+    background-image: url("../imagenes/krynar.jpeg");
+}
+
+.world-layen {
+    background-image: url("../imagenes/layen.jpeg");
+}
+
+.world-lumia {
+    background-image: url("../imagenes/lumia.jpg");
+}
+
+.world-portha {
+    background-image: url("../imagenes/portha.jpeg");
+}
+
+
+/* CONTENIDO SOBRE LA IMAGEN */
+
+.world-content {
+    width: 100%;
+    padding: 40px;
+
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(8, 17, 31, 0.95)
+    );
+
+    text-align: left;
+}
+
+
+/* TÍTULO DEL PLANETA */
+
+.world-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* SUBTÍTULO */
+
+.world-content h3 {
+    color: #D4AF37;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.world-content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+
+    max-width: 750px;
+
+    margin-bottom: 25px;
+}
+
+
+/* EFECTO AL PASAR EL RATÓN */
+
+.world:hover {
+    border-color: #D4AF37;
+}
+
+
+/* ===========================
+   WORLDS - MÓVIL
+=========================== */
+
+@media (max-width: 768px) {
+
+    .worlds-intro {
+        padding: 40px 20px;
+    }
+
+    .worlds-intro h1 {
+        font-size: 42px;
+    }
+
+    .worlds-intro p {
+        font-size: 17px;
+    }
+
+    .world {
+        min-height: 550px;
+    }
+
+    .world-content {
+        padding: 25px;
+    }
+
+    .world-content h2 {
+        font-size: 32px;
+    }
+
+    .world-content h3 {
+        font-size: 19px;
+    }
+
+    .world-content p {
+        font-size: 16px;
+    }
+
+}
+/* ===========================
+   BLOG
+=========================== */
+
+.blog-intro {
+    text-align: center;
+    padding: 60px 20px 40px;
+    color: white;
+}
+
+.blog-intro p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* LISTADO DE ARTÍCULOS */
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px 60px 80px;
+}
+
+
+/* CADA ARTÍCULO */
+
+.blog-article {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    padding: 25px;
+
+    border-bottom: 1px solid #2B3A52;
+}
+
+
+/* IMAGEN */
+
+.blog-image {
+    flex-shrink: 0;
+}
+
+.blog-image img {
+    width: 350px;
+    height: 230px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+.blog-content {
+    color: white;
+    flex: 1;
+}
+
+.blog-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.blog-content h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.blog-content h2 a:hover {
+    color: #5DBBFF;
+}
+
+
+.blog-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÓN */
+
+.blog-content .boton-secundario {
+    margin-top: 5px;
+}
+
+
+/* ===========================
+   BLOG RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .blog-intro {
+        padding: 40px 20px 30px;
+    }
+
+    .blog-intro h1 {
+        font-size: 45px;
+    }
+
+    .blog-intro p {
+        font-size: 17px;
+    }
+
+
+    .blog-list {
+        margin: 20px;
+        gap: 40px;
+    }
+
+
+    .blog-article {
+        flex-direction: column;
+        gap: 25px;
+
+        padding: 20px 0;
+        align-items: stretch;
+    }
+
+
+    .blog-image img {
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .blog-content h2 {
+        font-size: 25px;
+    }
+
+
+    .blog-content p {
+        font-size: 17px;
+        text-align: left;
+    }
+
+}
+/* ===========================
+   BLOG - ARTÍCULO
+=========================== */
+
+.article-intro {
+    text-align: center;
+    padding: 70px 20px 40px;
+    color: white;
+}
+
+.article-intro h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.article-subtitle {
+    font-size: 22px;
+    color: #B8C0CC;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+.article-main-image {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto 50px;
+}
+
+.article-main-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+.article-content {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.article-content h2 {
+    color: #5DBBFF;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.article-content p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+
+/* ENLACES DENTRO DEL ARTÍCULO */
+
+.article-content a {
+    color: #5DBBFF;
+    text-decoration: none;
+}
+
+.article-content a:hover {
+    color: #D4AF37;
+    text-decoration: underline;
+}
+
+
+/* VOLVER AL BLOG */
+
+.back-blog {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.back-blog a {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #5DBBFF;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.back-blog a:hover {
+    background-color: #D4AF37;
+    border-color: #D4AF37;
+    color: white;
+}
+
+
+/* ===========================
+   ARTÍCULO - MÓVIL
+=========================== */
+
+@media (max-width:768px) {
+
+    .article-intro {
+        padding: 40px 20px 25px;
+    }
+
+    .article-intro h1 {
+        font-size: 35px;
+    }
+
+    .article-subtitle {
+        font-size: 18px;
+    }
+
+    .article-main-image {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+
+    .article-main-image img {
+        height: 250px;
+    }
+
+    .article-content {
+        width: 90%;
+    }
+
+    .article-content h2 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .article-content p {
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+}
