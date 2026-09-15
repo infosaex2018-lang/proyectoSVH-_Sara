@@ -340,11 +340,11 @@ footer hr{
     }
 
     p.slogan{
-        font-size:24px;
+        font-size:40px;
     }
 
     p.subtitle{
-        font-size:16px;
+        font-size:30px;
     }
     .video-promocional{
     flex-direction:column;
@@ -811,4 +811,847 @@ footer hr{
         text-align: left;
     }
 
+}
+/* =========================
+   PÁGINA PROYECTO
+   ========================= */
+
+/* HERO */
+
+.project-hero {
+    position: relative;
+    min-height: 75vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.project-hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: 0;
+}
+
+.project-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(8, 17, 31, 0.90) 0%,
+        rgba(8, 17, 31, 0.55) 45%,
+        rgba(8, 17, 31, 0.15) 100%
+    );
+}
+
+.project-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.project-hero-content h1 {
+    font-size: 75px;
+    margin: 10px 0 15px;
+}
+
+.project-hero-content p {
+    font-size: 24px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.project-label {
+    color: #D4AF37;
+    font-size: 14px !important;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* ¿QUÉ ES GALATEA? */
+
+.project-intro {
+    width: 85%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.project-text,
+.project-image {
+    width: 50%;
+}
+
+.project-text h2 {
+    color: #5DBBFF;
+    font-size: 42px;
+    margin: 10px 0 25px;
+}
+
+.project-text p {
+    color: #B8C0CC;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.project-text strong {
+    color: white;
+}
+
+.project-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+
+/* REALIDAD E IMAGINACIÓN */
+
+.project-science {
+    padding: 90px 20px;
+    background-color: #0c1727;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #5DBBFF;
+    margin: 10px 0 20px;
+}
+
+.section-title > p:last-child {
+    color: #B8C0CC;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.project-cards {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    flex: 1;
+    padding: 40px;
+    border: 1px solid rgba(93, 187, 255, 0.25);
+    border-radius: 18px;
+    background-color: #08111F;
+}
+
+.project-card-number {
+    color: #D4AF37;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    color: #B8C0CC;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #5DBBFF;
+    transition: 0.3s;
+}
+
+
+/* ORIGEN DEL PROYECTO */
+
+.project-origin {
+    width: 85%;
+    max-width: 1200px;
+    margin: 110px auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.project-origin-image,
+.project-origin-text {
+    width: 50%;
+}
+
+.project-origin-image img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.project-origin-text h2 {
+    color: #5DBBFF;
+    font-size: 42px;
+    margin: 10px 0 25px;
+}
+
+.project-origin-text p {
+    color: #B8C0CC;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.project-origin-text a {
+    color: #5DBBFF;
+    text-decoration: none;
+}
+
+.project-origin-text a:hover {
+    color: #D4AF37;
+    text-decoration: underline;
+}
+
+
+/* FUTURO */
+
+.project-future {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #0c1727;
+}
+
+.project-future h2 {
+    color: #5DBBFF;
+    font-size: 46px;
+    margin: 10px 0 25px;
+}
+
+.project-future > p:not(.project-label) {
+    color: #B8C0CC;
+    max-width: 700px;
+    margin: 0 auto 18px;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.project-future .boton-principal {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVE PROYECTO
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .project-hero {
+        min-height: 65vh;
+    }
+
+    .project-hero::after {
+        background: rgba(8, 17, 31, 0.60);
+    }
+
+    .project-hero-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .project-hero-content h1 {
+        font-size: 45px;
+    }
+
+    .project-hero-content p {
+        font-size: 19px;
+        margin: 0 auto;
+    }
+
+    .project-label {
+        font-size: 12px !important;
+        letter-spacing: 2px;
+    }
+
+
+    .project-intro {
+        width: 90%;
+        margin: 60px auto;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .project-text,
+    .project-image {
+        width: 100%;
+    }
+
+    .project-text h2 {
+        font-size: 32px;
+    }
+
+    .project-text p {
+        font-size: 17px;
+    }
+
+    .project-image img {
+        height: 280px;
+    }
+
+
+    .project-science {
+        padding: 60px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title > p:last-child {
+        font-size: 17px;
+    }
+
+    .project-cards {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project-card {
+        padding: 30px;
+    }
+
+    .project-card h3 {
+        font-size: 25px;
+    }
+
+    .project-card p {
+        font-size: 17px;
+    }
+
+
+    .project-origin {
+        width: 90%;
+        margin: 70px auto;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .project-origin-image,
+    .project-origin-text {
+        width: 100%;
+    }
+
+    .project-origin-image img {
+        height: 300px;
+    }
+
+    .project-origin-text h2 {
+        font-size: 32px;
+    }
+
+    .project-origin-text p {
+        font-size: 17px;
+    }
+
+
+    .project-future {
+        padding: 70px 20px;
+    }
+
+    .project-future h2 {
+        font-size: 34px;
+    }
+
+    .project-future > p:not(.project-label) {
+        font-size: 17px;
+    }
+}
+/* =========================
+   PÁGINA ESPECIES
+   ========================= */
+
+/* HERO */
+
+.hero-especies {
+    min-height: 70vh;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(8, 17, 31, 0.45),
+            rgba(8, 17, 31, 0.95)
+        ),
+        url("../imagenes/lumiens.jpg") center / cover no-repeat;
+}
+
+.hero-especies-contenido {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-especies h1 {
+    margin: 15px 0 20px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+.hero-especies p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #B8C0CC;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* ETIQUETAS */
+
+.hero-especies .etiqueta,
+.introduccion-especies .etiqueta,
+.carrusel-especies .etiqueta,
+.mundo-especies .etiqueta,
+.biodiversidad .etiqueta {
+    color: #FFFFFF;
+    font-size: 2 rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* INTRODUCCIÓN */
+
+.introduccion-especies {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.introduccion-especies h2 {
+    margin: 15px 0 25px;
+    font-size: 2.5rem;
+}
+
+.introduccion-especies p {
+    max-width: 750px;
+    margin: 10px auto;
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CARRUSEL
+   ========================= */
+
+.carrusel-especies {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 50px 100px;
+}
+
+.carrusel-especies .titulo-seccion {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.carrusel-especies .titulo-seccion h2 {
+    margin: 15px 0;
+    font-size: 2.8rem;
+}
+
+.carrusel-especies .titulo-seccion p {
+    color: #B8C0CC;
+}
+
+
+/* CONTENEDOR DEL SLIDE */
+
+.carrusel-especies .carrusel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+
+/* SLIDES */
+
+.carrusel-especies .slide-especie {
+    display: none;
+    width: 100%;
+    min-height: 560px;
+    background-color: #08111F;
+}
+
+.carrusel-especies .slide-especie.activo {
+    display: flex;
+}
+
+
+/* IMAGEN */
+
+
+.carrusel-especies .slide-especie > img {
+    width: 55%;
+    height: 560px;
+    object-fit: contain;
+    background-color: #08111F;
+}
+
+/* INFORMACIÓN */
+
+.carrusel-especies .info-especie {
+    width: 45%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrusel-especies .info-especie .planeta {
+    margin: 0 0 10px;
+    color: #5DBBFF;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.carrusel-especies .info-especie h3 {
+    margin: 5px 0 25px;
+    font-size: 3.2rem;
+}
+
+.carrusel-especies .info-especie > p:not(.planeta) {
+    margin: 0 0 30px;
+    color: #B8C0CC;
+    line-height: 1.7;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.carrusel-especies .caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.carrusel-especies .caracteristicas span {
+    padding: 7px 12px;
+    border: 1px solid rgba(93, 187, 255, 0.7);
+    border-radius: 20px;
+    color: #B8C0CC;
+    font-size: 0.78rem;
+}
+
+
+/* BOTÓN DEL CARRUSEL */
+
+.carrusel-especies .boton-secundario {
+    align-self: flex-start;
+}
+
+
+/* =========================
+   FLECHAS
+   ========================= */
+
+.carrusel-especies .flecha {
+    position: absolute;
+    top: 58%;
+    z-index: 10;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #5DBBFF;
+    border-radius: 50%;
+
+    background-color: rgba(8, 17, 31, 0.9);
+    color: #5DBBFF;
+
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.carrusel-especies .flecha:hover {
+    background-color: #5DBBFF;
+    color: #08111F;
+}
+
+.carrusel-especies .anterior {
+    left: 5px;
+}
+
+.carrusel-especies .siguiente {
+    right: 5px;
+}
+
+
+/* =========================
+   INDICADORES
+   ========================= */
+
+.carrusel-especies .indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.carrusel-especies .indicador {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+
+    border: 1px solid #5DBBFF;
+    border-radius: 50%;
+
+    background: transparent;
+    cursor: pointer;
+}
+
+.carrusel-especies .indicador.activo {
+    background-color: #5DBBFF;
+}
+
+
+/* =========================
+   SECCIONES DE LOS MUNDOS
+   ========================= */
+
+.mundo-especies {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 30px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(93, 187, 255, 0.2);
+}
+
+.mundo-especies h2 {
+    margin: 15px 0 20px;
+    font-size: 2.5rem;
+}
+
+.mundo-especies > p:not(.etiqueta) {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   BIODIVERSIDAD
+   ========================= */
+
+.biodiversidad {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.biodiversidad h2 {
+    margin: 20px 0;
+    font-size: 2.7rem;
+}
+
+.biodiversidad > p:not(.etiqueta):not(.proximamente) {
+    max-width: 700px;
+    margin: 15px auto;
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.biodiversidad .proximamente {
+    margin-top: 40px;
+    color: #5DBBFF;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   CTA
+   ========================= */
+
+.cta-especies {
+    padding: 100px 30px;
+    text-align: center;
+    background-color: #050C18;
+}
+
+.cta-especies h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.cta-especies .botones-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   MÓVIL
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .hero-especies {
+        min-height: 60vh;
+        padding: 70px 20px;
+    }
+
+    .hero-especies h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-especies p {
+        font-size: 1rem;
+    }
+
+
+    /* INTRO */
+
+    .introduccion-especies {
+        padding: 70px 20px;
+    }
+
+    .introduccion-especies h2 {
+        font-size: 2rem;
+    }
+
+
+    /* CARRUSEL */
+
+    .carrusel-especies {
+        padding: 60px 15px 80px;
+    }
+
+    .carrusel-especies .titulo-seccion h2 {
+        font-size: 2rem;
+    }
+
+    .carrusel-especies .slide-especie {
+        flex-direction: column;
+        min-height: auto;
+    }
+.carrusel-especies .slide-especie > img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background-color: #08111F;
+}
+
+    .carrusel-especies .info-especie {
+        width: 100%;
+        padding: 35px 25px 40px;
+    }
+
+    .carrusel-especies .info-especie h3 {
+        font-size: 2.4rem;
+    }
+
+
+    /* FLECHAS */
+
+    .carrusel-especies .flecha {
+        top: 43%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .carrusel-especies .anterior {
+        left: 8px;
+    }
+
+    .carrusel-especies .siguiente {
+        right: 8px;
+    }
+
+
+    /* MUNDOS */
+
+    .mundo-especies {
+        padding: 70px 20px;
+    }
+
+    .mundo-especies h2 {
+        font-size: 2rem;
+    }
+
+
+    /* BIODIVERSIDAD */
+
+    .biodiversidad {
+        padding: 70px 20px;
+    }
+
+    .biodiversidad h2 {
+        font-size: 2rem;
+    }
+
+
+    /* CTA */
+
+    .cta-especies {
+        padding: 80px 20px;
+    }
+
+    .cta-especies h2 {
+        font-size: 2rem;
+    }
+
+    .cta-especies .botones-cta {
+        flex-direction: column;
+    }
+
+    .cta-especies .botones-cta a {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
+.hero-especies h1,
+.introduccion-especies h2,
+.carrusel-especies h2,
+.carrusel-especies h3,
+.mundo-especies h2,
+.biodiversidad h2,
+.cta-especies h2 {
+    color: #ffffff;
 }
