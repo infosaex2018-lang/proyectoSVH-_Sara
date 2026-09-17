@@ -1655,3 +1655,244 @@ footer hr{
 .cta-especies h2 {
     color: #ffffff;
 }
+
+/* =========================
+PÁGINA CONTACTO
+========================= */
+
+.contacto {
+max-width: 800px;
+margin: 80px auto;
+padding: 40px;
+background-color: #101C2C;
+border: 1px solid #26364A;
+border-radius: 12px;
+}
+
+.contacto h2 {
+text-align: center;
+color: #D4AF37;
+font-size: 2.2rem;
+margin-bottom: 15px;
+}
+
+.contacto > p {
+text-align: center;
+color: #B8C0CC;
+line-height: 1.7;
+margin-bottom: 40px;
+}
+
+.campo {
+display: flex;
+flex-direction: column;
+margin-bottom: 22px;
+}
+
+.campo label {
+color: #FFFFFF;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 12px;
+background-color: #08111F;
+border: 1px solid #40516A;
+border-radius: 6px;
+color: #FFFFFF;
+font-family: inherit;
+font-size: 1rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+outline: none;
+border-color: #D4AF37;
+}
+
+.campo textarea {
+resize: vertical;
+}
+
+.campo-checkbox {
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 25px 0;
+}
+
+.campo-checkbox input {
+width: 17px;
+height: 17px;
+}
+
+.campo-checkbox label {
+color: #B8C0CC;
+font-size: 0.9rem;
+}
+
+.contacto button {
+display: block;
+margin: 30px auto 0;
+padding: 12px 28px;
+background-color: #D4AF37;
+color: #08111F;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.contacto button:hover {
+background-color: #FFFFFF;
+}
+
+/* =========================
+CONTACTO — MÓVIL
+========================= */
+
+@media (max-width: 768px) {
+
+.contacto {
+    margin: 40px 20px;
+    padding: 25px 20px;
+}
+
+.contacto h2 {
+    font-size: 1.8rem;
+}
+
+.contacto > p {
+    font-size: 0.95rem;
+}
+
+.campo input, 
+.campo textarea {
+    font-size: 1rem;
+
+}
+
+   
+}
+
+/* =========================
+   AVISO LEGAL
+   ========================= */
+
+.legal {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    color: white;
+    line-height: 1.7;
+}
+
+.legal h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 40px;
+}
+
+.legal h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.legal p {
+    margin-bottom: 20px;
+}
+
+.legal ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.legal li {
+    margin-bottom: 12px;
+}
+
+.legal a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Nota sobre los datos ficticios */
+
+.legal p strong {
+    color: #D4AF37;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+footer nav a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: white;
+}
+
+
+/* =========================
+   VERSIÓN MÓVIL
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .legal {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .legal h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .legal h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .legal p,
+    .legal li {
+        font-size: 16px;
+    }
+
+    footer nav {
+        gap: 15px;
+    }
+}
