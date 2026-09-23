@@ -1,0 +1,8 @@
+/* BLOG: apilar imagen y texto antes de que las columnas queden estrechas. */
+h1.titulo { font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1.2; }
+@media (max-width: 1024px) {
+    .blog-list { margin: 20px; }
+    .blog-article { gap: 25px; padding: 20px 0; }
+    .blog-image { flex: 0 1 40%; }
+}
+@media (max-width: 768px) { .blog-image { flex: auto; } }

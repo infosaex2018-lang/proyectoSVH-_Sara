@@ -1,0 +1,51 @@
+/* AJUSTES COMUNES. Se cargan después de style.css para conservar su diseño. */
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; color: #fff; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+img, video { max-width: 100%; }
+video { height: auto; }
+main, section, article, div { min-width: 0; }
+h1, h2, h3, p, li, a, strong { overflow-wrap: break-word; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, [tabindex]:focus-visible { outline: 3px solid #D4AF37; outline-offset: 4px; }
+.boton-principal, .boton-secundario { min-height: 44px; font-size: 1rem; text-align: center; }
+.boton-principal:hover, .boton-secundario:hover { color: #08111F !important; }
+.saltar-contenido { position: absolute; top: 0; left: 12px; transform: translateY(-150%); z-index: 100; padding: 12px; background: #fff; color: #08111F; }
+.saltar-contenido:focus { transform: translateY(0); }
+
+/* CABECERA: Orbitron solo en la marca; párrafos con una fuente sencilla. */
+.site-header { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 18px clamp(16px, 4vw, 50px); }
+.marca { display: inline-flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; flex-shrink: 0; }
+.marca .logo { display: block; width: 64px; height: 64px; object-fit: contain; }
+.marca span { font-family: 'Orbitron', Arial, sans-serif; font-size: clamp(1.1rem, 2.2vw, 1.75rem); font-weight: 700; letter-spacing: .06em; }
+.site-header nav { display: flex; flex-direction: row; flex-wrap: wrap; gap: clamp(14px, 2.5vw, 32px); }
+.site-header nav a { display: inline-flex; align-items: center; margin: 0; min-height: 44px; font-size: 1.125rem; }
+.site-header nav a[aria-current] { color: #D4AF37; text-decoration: underline; text-underline-offset: 6px; }
+.menu-toggle { display: none; }
+
+/* AVISOS EDITORIALES: distinguen ficción y divulgación sin alterar los textos. */
+.nota-contenido { margin: 0; padding: 12px 20px; text-align: center; color: #B8C0CC; background: #050C18; font-size: 1rem; }
+.categoria-articulo { color: #5DBBFF; }
+
+/* FOOTER: mismo patrón que el footer general recibido. */
+footer { padding: 40px clamp(20px, 4vw, 50px); }
+.footer-content { max-width: 1200px; margin: auto; gap: 40px; }
+.footer-links a, .footer-project a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-bottom: 4px; }
+.footer-bottom { font-size: 1rem; }
+
+/* MENÚ MÓVIL: el menú solo se oculta cuando JavaScript está disponible. */
+@media (max-width: 900px) {
+    .site-header { gap: 12px; }
+    .marca .logo { width: 48px; height: 48px; }
+    .site-header nav { width: 100%; flex-direction: column; gap: 4px; text-align: left; }
+    .site-header nav a { padding: 8px 12px; }
+    .site-header.menu-preparado .menu-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 44px; min-height: 44px; padding: 6px 10px; border: 1px solid #5DBBFF; border-radius: 8px; background: #050C18; color: #fff; cursor: pointer; }
+    .site-header.menu-preparado nav { display: none; }
+    .site-header.menu-preparado.menu-abierto nav { display: flex; }
+}
+@media (max-width: 600px) {
+    .footer-content { flex-direction: column; gap: 24px; }
+    .footer-logo, .footer-links, .footer-project { flex: auto; width: 100%; }
+}
+@media (max-width: 360px) { .menu-texto { display: none; } .marca { gap: 8px; } }

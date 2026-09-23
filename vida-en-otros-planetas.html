@@ -1,45 +1,53 @@
-html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>¿Podría existir vida en otros planetas? | GALATEA</title>
 
+    <!-- ESTILOS: base original, ajustes comunes y ajustes de esta página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/articulos.css">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+    <script src="js/navegacion.js" defer></script>
 
 </head>
 
 <body>
+    <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
 
     <!-- CABECERA -->
 
-    <header>
-
-        <img class="logo" src="imagenes/logo.png" alt="Logo de Galatea" height="80" width="80">
-
-        <nav>
-
+    <!-- CABECERA: marca y navegación compartidas por todas las páginas -->
+    <header class="site-header">
+        <a class="marca" href="index.html" aria-label="GALATEA, inicio">
+            <img class="logo" src="imagenes/logo.png" alt="" height="80" width="80">
+            <span>GALATEA</span>
+        </a>
+        <!-- JavaScript activa este botón en móvil. Sin JavaScript los enlaces siguen visibles. -->
+        <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú">
+            <span aria-hidden="true">☰</span><span class="menu-texto">Menú</span>
+        </button>
+        <nav id="menu-principal" aria-label="Navegación principal">
             <a href="index.html">Explorar</a>
-
             <a href="mundos.html">Mundos</a>
-
             <a href="especies.html">Especies</a>
-
-            <a href="blog.html">Blog</a>
-
+            <a href="blog.html" aria-current="true">Blog</a>
             <a href="proyecto.html">Proyecto</a>
-
         </nav>
-
     </header>
 
 
-    <main>
-
-        <!-- INTRODUCCIÓN DEL ARTÍCULO -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido">
+<!-- INTRODUCCIÓN DEL ARTÍCULO -->
 
         <section class="article-intro">
 
@@ -59,7 +67,7 @@ html
         <div class="article-main-image">
 
             <img src="imagenes/vida-en-otros-planetas.jpg"
-                 alt="Ilustración sobre la posibilidad de vida en otros planetas">
+                alt="Ilustración sobre la posibilidad de vida en otros planetas">
 
         </div>
 
@@ -174,7 +182,8 @@ html
 
     <!-- FOOTER -->
 
-    <footer>
+    <!-- PIE DE PÁGINA: patrón del footer general original -->
+<footer>
 
         <div class="footer-content">
 
@@ -189,51 +198,43 @@ html
 
             </div>
 
-
             <div class="footer-links">
 
                 <h3>Explorar</h3>
 
                 <a href="index.html">Inicio</a>
-
                 <a href="mundos.html">Mundos</a>
-
                 <a href="especies.html">Especies</a>
-
                 <a href="blog.html">Blog</a>
 
             </div>
-
 
             <div class="footer-project">
 
                 <h3>Proyecto</h3>
 
                 <a href="proyecto.html">Sobre GALATEA</a>
-
-                <a href="#">Contacto</a>
-
-                <a href="#">Privacidad</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="aviso-legal.html">Aviso legal</a>
+                <a href="privacidad.html">Privacidad</a>
+                <a href="politica_de_cookies.html">Política de Cookies</a>
 
             </div>
 
         </div>
 
-
         <hr>
-
 
         <div class="footer-bottom">
 
-            <p>
-                © 2026 GALATEA. Todos los derechos reservados.
-            </p>
+            <p>© 2026 GALATEA. Todos los derechos reservados.</p>
 
         </div>
 
     </footer>
 
+
+
 </body>
 
 </html>
-

@@ -1,0 +1,29 @@
+/* INICIO: misma composición, con medidas flexibles. */
+h1.titulo { font-size: clamp(2.5rem, 7vw, 6.25rem); line-height: 1.15; }
+p.slogan { font-size: clamp(1.5rem, 4vw, 3.125rem); line-height: 1.35; }
+p.subtitle { font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.7; }
+.hero { padding: 48px 20px; }
+.hero h1 { margin: 0 0 20px; }
+.hero p { max-width: 900px; }
+.video-promocional { gap: 30px; border: 2px solid transparent; }
+.videoLumienses { margin-right: 0; flex: 1; }
+.informacionLumienses { flex: 1; }
+.card { max-width: 100%; height: auto; min-height: 500px; }
+.card-content { background: linear-gradient(transparent, rgba(8,17,31,.98) 32%); }
+.blog { gap: 40px; }
+.image-blog { flex: 0 1 390px; }
+.blog-content { flex: 1; }
+@media (max-width: 900px) {
+    .blog { flex-direction: column; margin: 30px 20px; padding: 0; gap: 16px; align-items: stretch; }
+    .image-blog { flex: auto; padding: 0; }
+    .image-blog img { width: 100%; height: auto; max-height: 350px; object-fit: cover; }
+    .blog p { text-align: left; font-size: 1.0625rem; }
+    .video-promocional { flex-direction: column; margin: 0; padding: 24px 16px; }
+    .informacionLumienses { padding: 8px; }
+}
+@media (max-width: 480px) {
+    .cards { padding: 16px; }
+    .cards-grid { margin: 0; }
+    .card-content { padding: 22px; }
+    .hero { min-height: 65vh; }
+}

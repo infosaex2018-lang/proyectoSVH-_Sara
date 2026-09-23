@@ -1,0 +1,4 @@
+/* ARTÍCULOS: tipografía de lectura y anchura cómoda en cada dispositivo. */
+.article-intro h1 { font-size: clamp(2rem, 4.5vw, 3.125rem); line-height: 1.2; }
+.article-content { font-size: 1.0625rem; }
+@media (max-width: 480px) { .article-main-image img { height: auto; } }
