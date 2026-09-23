@@ -73,6 +73,7 @@ p.subtitle {
     background-color: #D4AF37;
     color: white;
 }
+
 .video-promocional {
     display: flex;
 
@@ -119,39 +120,40 @@ h2.titulo {
     background-color: #D4AF37;
     color: white !important;
 }
+
 .cards {
-    color:white;
-    font-size:18px;
-    padding:20px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
 }
 
 .cards-grid {
 
-    margin:0 10px;
+    margin: 0 10px;
 
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 
 }
 
 
 .card {
 
-    width:320px;
-    height:500px;
+    width: 320px;
+    height: 500px;
 
-    border:2px solid #5DBBFF;
-    border-radius:15px;
-    overflow:hidden;
+    border: 2px solid #5DBBFF;
+    border-radius: 15px;
+    overflow: hidden;
 
-    display:flex;
-    align-items:flex-end;
+    display: flex;
+    align-items: flex-end;
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
 }
@@ -159,36 +161,35 @@ h2.titulo {
 
 .card:hover {
 
-    border-color:#D4AF37;
+    border-color: #D4AF37;
 
 }
 
 
 .card-content {
 
-    width:100%;
-    padding:25px;
+    width: 100%;
+    padding: 25px;
 
-    background:linear-gradient(
-        transparent,
-        rgba(8,17,31,0.95)
-    );
+    background: linear-gradient(transparent,
+            rgba(8, 17, 31, 0.95));
 
-    color:white;
-text-align:center;
+    color: white;
+    text-align: center;
 }
 
-.card-krynar{
-    background-image:url("../imagenes/krynar.jpeg");
+.card-krynar {
+    background-image: url("../imagenes/krynar.jpeg");
 }
 
-.card-layen{
-    background-image:url("../imagenes/layen.jpeg");
+.card-layen {
+    background-image: url("../imagenes/layen.jpeg");
 }
 
-.card-portha{
-    background-image:url("../imagenes/portha.jpeg");
+.card-portha {
+    background-image: url("../imagenes/portha.jpeg");
 }
+
 .blog {
     display: flex;
     margin-top: 20px;
@@ -198,164 +199,173 @@ text-align:center;
     padding: 0 20px;
     gap: 80px;
 }
-.image-blog{
-    padding:20px;
+
+.image-blog {
+    padding: 20px;
 }
 
-.image-blog img{
-    width:350px;
-    height:250px;
-    object-fit:cover;
-    border-radius:10px;
+.image-blog img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 .main-sentence {
     color: #5DBBFF;
     text-align: center;
     font-size: 20px;
 }
+
 .blog-content a,
 .blog-content p {
-    text-decoration:none;
-    color:white;
+    text-decoration: none;
+    color: white;
 }
+
 .blog {
     align-items: center;
 }
-.blog p{
+
+.blog p {
     font-size: 20px;
     text-align: justify;
 }
+
 /* ===========================
    FOOTER
 =========================== */
 
-footer{
+footer {
 
-    margin-top:80px;
-    padding:50px;
+    margin-top: 80px;
+    padding: 50px;
 
-    background-color:#050C18;
+    background-color: #050C18;
 
-    color:white;
-
-}
-
-.footer-content{
-
-    display:flex;
-    justify-content:space-between;
-    gap:60px;
-    flex-wrap:wrap;
+    color: white;
 
 }
 
-.footer-logo{
+.footer-content {
 
-    flex:2;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
 
 }
 
-.footer-logo p{
+.footer-logo {
 
-    margin-top:20px;
-    line-height:1.6;
+    flex: 2;
+
+}
+
+.footer-logo p {
+
+    margin-top: 20px;
+    line-height: 1.6;
 
 }
 
 .footer-links,
-.footer-project{
+.footer-project {
 
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 
-    flex:1;
+    flex: 1;
 
 }
 
 .footer-links h3,
-.footer-project h3{
+.footer-project h3 {
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
-    color:#D4AF37;
+    color: #D4AF37;
 
 }
 
 .footer-links a,
-.footer-project a{
+.footer-project a {
 
-    color:white;
+    color: white;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    margin-bottom:12px;
+    margin-bottom: 12px;
 
 }
 
 .footer-links a:hover,
-.footer-project a:hover{
+.footer-project a:hover {
 
-    color:#D4AF37;
-
-}
-
-footer hr{
-
-    margin:40px 0;
-
-    border:none;
-
-    border-top:1px solid #2B3A52;
+    color: #D4AF37;
 
 }
 
-.footer-bottom{
+footer hr {
 
-    text-align:center;
+    margin: 40px 0;
 
-    font-size:14px;
+    border: none;
 
-    color:#B8C0CC;
-
-}
-@media (max-width:768px){
-
-    header{
-        flex-direction:column;
-    }
-
-    nav{
-        flex-direction:column;
-        gap:20px;
-        text-align:center;
-    }
-
-    .hero{
-        min-height:70vh;
-        padding:40px 20px;
-    }
-
-    h1.titulo{
-        font-size:50px;
-    }
-
-    p.slogan{
-        font-size:40px;
-    }
-
-    p.subtitle{
-        font-size:30px;
-    }
-    .video-promocional{
-    flex-direction:column;
-}
-
-.videoLumienses video{
-    width:100%;
-    height:auto;
-} 
+    border-top: 1px solid #2B3A52;
 
 }
+
+.footer-bottom {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #B8C0CC;
+
+}
+
+@media (max-width:768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 40px 20px;
+    }
+
+    h1.titulo {
+        font-size: 50px;
+    }
+
+    p.slogan {
+        font-size: 40px;
+    }
+
+    p.subtitle {
+        font-size: 30px;
+    }
+
+    .video-promocional {
+        flex-direction: column;
+    }
+
+    .videoLumienses video {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
 /* ===========================
    WORLDS PAGE
 =========================== */
@@ -435,10 +445,8 @@ footer hr{
 
     color: white;
 
-    background: linear-gradient(
-        transparent,
-        rgba(8, 17, 31, 0.95)
-    );
+    background: linear-gradient(transparent,
+            rgba(8, 17, 31, 0.95));
 
     text-align: left;
 }
@@ -520,6 +528,7 @@ footer hr{
     }
 
 }
+
 /* ===========================
    BLOG
 =========================== */
@@ -667,6 +676,7 @@ footer hr{
     }
 
 }
+
 /* ===========================
    BLOG - ARTÍCULO
 =========================== */
@@ -812,6 +822,7 @@ footer hr{
     }
 
 }
+
 /* =========================
    PÁGINA PROYECTO
    ========================= */
@@ -838,12 +849,10 @@ footer hr{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(8, 17, 31, 0.90) 0%,
-        rgba(8, 17, 31, 0.55) 45%,
-        rgba(8, 17, 31, 0.15) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(8, 17, 31, 0.90) 0%,
+            rgba(8, 17, 31, 0.55) 45%,
+            rgba(8, 17, 31, 0.15) 100%);
 }
 
 .project-hero-content {
@@ -936,7 +945,7 @@ footer hr{
     margin: 10px 0 20px;
 }
 
-.section-title > p:last-child {
+.section-title>p:last-child {
     color: #B8C0CC;
     font-size: 19px;
     line-height: 1.7;
@@ -1046,7 +1055,7 @@ footer hr{
     margin: 10px 0 25px;
 }
 
-.project-future > p:not(.project-label) {
+.project-future>p:not(.project-label) {
     color: #B8C0CC;
     max-width: 700px;
     margin: 0 auto 18px;
@@ -1126,7 +1135,7 @@ footer hr{
         font-size: 32px;
     }
 
-    .section-title > p:last-child {
+    .section-title>p:last-child {
         font-size: 17px;
     }
 
@@ -1181,10 +1190,11 @@ footer hr{
         font-size: 34px;
     }
 
-    .project-future > p:not(.project-label) {
+    .project-future>p:not(.project-label) {
         font-size: 17px;
     }
 }
+
 /* =========================
    PÁGINA ESPECIES
    ========================= */
@@ -1200,10 +1210,8 @@ footer hr{
     text-align: center;
 
     background:
-        linear-gradient(
-            rgba(8, 17, 31, 0.45),
-            rgba(8, 17, 31, 0.95)
-        ),
+        linear-gradient(rgba(8, 17, 31, 0.45),
+            rgba(8, 17, 31, 0.95)),
         url("../imagenes/lumiens.jpg") center / cover no-repeat;
 }
 
@@ -1315,7 +1323,7 @@ footer hr{
 /* IMAGEN */
 
 
-.carrusel-especies .slide-especie > img {
+.carrusel-especies .slide-especie>img {
     width: 55%;
     height: 560px;
     object-fit: contain;
@@ -1345,7 +1353,7 @@ footer hr{
     font-size: 3.2rem;
 }
 
-.carrusel-especies .info-especie > p:not(.planeta) {
+.carrusel-especies .info-especie>p:not(.planeta) {
     margin: 0 0 30px;
     color: #B8C0CC;
     line-height: 1.7;
@@ -1460,7 +1468,7 @@ footer hr{
     font-size: 2.5rem;
 }
 
-.mundo-especies > p:not(.etiqueta) {
+.mundo-especies>p:not(.etiqueta) {
     max-width: 700px;
     margin: 0 auto;
     color: #B8C0CC;
@@ -1484,7 +1492,7 @@ footer hr{
     font-size: 2.7rem;
 }
 
-.biodiversidad > p:not(.etiqueta):not(.proximamente) {
+.biodiversidad>p:not(.etiqueta):not(.proximamente) {
     max-width: 700px;
     margin: 15px auto;
     color: #B8C0CC;
@@ -1569,12 +1577,13 @@ footer hr{
         flex-direction: column;
         min-height: auto;
     }
-.carrusel-especies .slide-especie > img {
-    width: 100%;
-    height: 320px;
-    object-fit: contain;
-    background-color: #08111F;
-}
+
+    .carrusel-especies .slide-especie>img {
+        width: 100%;
+        height: 320px;
+        object-fit: contain;
+        background-color: #08111F;
+    }
 
     .carrusel-especies .info-especie {
         width: 100%;
@@ -1646,6 +1655,7 @@ footer hr{
         text-align: center;
     }
 }
+
 .hero-especies h1,
 .introduccion-especies h2,
 .carrusel-especies h2,
@@ -1661,96 +1671,96 @@ PÁGINA CONTACTO
 ========================= */
 
 .contacto {
-max-width: 800px;
-margin: 80px auto;
-padding: 40px;
-background-color: #101C2C;
-border: 1px solid #26364A;
-border-radius: 12px;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #101C2C;
+    border: 1px solid #26364A;
+    border-radius: 12px;
 }
 
 .contacto h2 {
-text-align: center;
-color: #D4AF37;
-font-size: 2.2rem;
-margin-bottom: 15px;
+    text-align: center;
+    color: #D4AF37;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
 }
 
-.contacto > p {
-text-align: center;
-color: #B8C0CC;
-line-height: 1.7;
-margin-bottom: 40px;
+.contacto>p {
+    text-align: center;
+    color: #B8C0CC;
+    line-height: 1.7;
+    margin-bottom: 40px;
 }
 
 .campo {
-display: flex;
-flex-direction: column;
-margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
 }
 
 .campo label {
-color: #FFFFFF;
-margin-bottom: 8px;
-font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .campo input,
 .campo textarea {
-width: 100%;
-box-sizing: border-box;
-padding: 12px;
-background-color: #08111F;
-border: 1px solid #40516A;
-border-radius: 6px;
-color: #FFFFFF;
-font-family: inherit;
-font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #08111F;
+    border: 1px solid #40516A;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 .campo input:focus,
 .campo textarea:focus {
-outline: none;
-border-color: #D4AF37;
+    outline: none;
+    border-color: #D4AF37;
 }
 
 .campo textarea {
-resize: vertical;
+    resize: vertical;
 }
 
 .campo-checkbox {
-display: flex;
-align-items: center;
-gap: 10px;
-margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
 }
 
 .campo-checkbox input {
-width: 17px;
-height: 17px;
+    width: 17px;
+    height: 17px;
 }
 
 .campo-checkbox label {
-color: #B8C0CC;
-font-size: 0.9rem;
+    color: #B8C0CC;
+    font-size: 0.9rem;
 }
 
 .contacto button {
-display: block;
-margin: 30px auto 0;
-padding: 12px 28px;
-background-color: #D4AF37;
-color: #08111F;
-border: none;
-border-radius: 6px;
-font-size: 1rem;
-font-weight: bold;
-cursor: pointer;
-transition: 0.3s;
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 28px;
+    background-color: #D4AF37;
+    color: #08111F;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .contacto button:hover {
-background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /* =========================
@@ -1759,26 +1769,26 @@ CONTACTO — MÓVIL
 
 @media (max-width: 768px) {
 
-.contacto {
-    margin: 40px 20px;
-    padding: 25px 20px;
-}
+    .contacto {
+        margin: 40px 20px;
+        padding: 25px 20px;
+    }
 
-.contacto h2 {
-    font-size: 1.8rem;
-}
+    .contacto h2 {
+        font-size: 1.8rem;
+    }
 
-.contacto > p {
-    font-size: 0.95rem;
-}
+    .contacto>p {
+        font-size: 0.95rem;
+    }
 
-.campo input, 
-.campo textarea {
-    font-size: 1rem;
+    .campo input,
+    .campo textarea {
+        font-size: 1rem;
 
-}
+    }
 
-   
+
 }
 
 /* =========================
@@ -1895,4 +1905,681 @@ footer nav a:hover {
     footer nav {
         gap: 15px;
     }
+}
+/* =========================================================
+   PÁGINA ESPECIES
+   ========================================================= */
+
+
+/* =========================
+   HERO DE ESPECIES
+   ========================= */
+
+.hero-especies {
+    min-height: 70vh;
+    padding: 100px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(8, 17, 31, 0.35),
+            rgba(8, 17, 31, 0.95)
+        ),
+        url("../imagenes/lumia_oceano.jpg") center / cover no-repeat;
+}
+
+.hero-especies-contenido {
+    width: 100%;
+    max-width: 850px;
+}
+
+.hero-especies .etiqueta {
+    color: #5DBBFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero-especies h1 {
+    margin: 15px 0 20px;
+    color: #FFFFFF;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+}
+
+.hero-especies p:not(.etiqueta) {
+    max-width: 720px;
+    margin: 0 auto 35px;
+
+    color: #D5DBE3;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   INTRODUCCIÓN
+   ========================= */
+
+.introduccion-especies {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 30px;
+
+    text-align: center;
+}
+
+.introduccion-especies .etiqueta,
+.especie-mundo .etiqueta,
+.biodiversidad .etiqueta {
+    color: #5DBBFF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.introduccion-especies h2 {
+    margin: 15px 0 25px;
+
+    color: #FFFFFF;
+    font-size: 2.6rem;
+}
+
+.introduccion-especies p:not(.etiqueta) {
+    max-width: 760px;
+    margin: 12px auto;
+
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BLOQUES DE CADA ESPECIE
+   ========================================================= */
+
+.especie-mundo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 30px;
+
+    border-top: 1px solid rgba(93, 187, 255, 0.15);
+}
+
+
+/* Título de cada especie */
+
+.cabecera-especie {
+    max-width: 800px;
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.cabecera-especie h2 {
+    margin: 12px 0 18px;
+
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+.cabecera-especie > p:last-child {
+    max-width: 700px;
+    margin: auto;
+
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CARRUSEL
+   ========================================================= */
+
+.carrusel-especie {
+    position: relative;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Contenedor de las diapositivas */
+
+.slides-especie {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(93, 187, 255, 0.20);
+    border-radius: 20px;
+
+    background-color: #08111F;
+}
+
+
+/* Cada diapositiva permanece oculta */
+
+.slide-especie {
+    display: none;
+
+    width: 100%;
+    min-height: 560px;
+}
+
+
+/* Solo mostramos la diapositiva activa */
+
+.slide-especie.activo {
+    display: flex;
+}
+
+
+/* =========================
+   IMAGEN DEL CARRUSEL
+   ========================= */
+
+.slide-especie > img {
+    display: block;
+
+    width: 60%;
+    height: 560px;
+
+    object-fit: cover;
+    object-position: center;
+
+    background-color: #050C18;
+}
+
+
+/* =========================
+   TEXTO DEL CARRUSEL
+   ========================= */
+
+.info-slide {
+    width: 40%;
+    box-sizing: border-box;
+
+    padding: 55px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #101C2C,
+            #08111F
+        );
+}
+
+.numero-slide {
+    margin: 0 0 15px;
+
+    color: #5DBBFF;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.info-slide h3 {
+    margin: 0 0 25px;
+
+    color: #FFFFFF;
+
+    font-size: 2.4rem;
+    line-height: 1.15;
+}
+
+.info-slide p:not(.numero-slide) {
+    margin: 0;
+    color: #D5DBE3;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FLECHAS
+   ========================================================= */
+
+.flecha-carrusel {
+    position: absolute;
+    top: 280px;
+
+    z-index: 10;
+
+    width: 48px;
+    height: 48px;
+
+    transform: translateY(-50%);
+
+    border: 1px solid #5DBBFF;
+    border-radius: 50%;
+
+    background-color: rgba(8, 17, 31, 0.90);
+    color: #5DBBFF;
+
+    font-size: 1.3rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.flecha-carrusel:hover {
+    background-color: #5DBBFF;
+    color: #08111F;
+}
+
+.flecha-carrusel.anterior {
+    left: 15px;
+}
+
+.flecha-carrusel.siguiente {
+    right: 15px;
+}
+
+
+/* =========================================================
+   PUNTOS DEL CARRUSEL
+   ========================================================= */
+
+.indicadores-carrusel {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.indicadores-carrusel .indicador {
+    width: 11px;
+    height: 11px;
+
+    padding: 0;
+
+    border: 1px solid #5DBBFF;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.indicadores-carrusel .indicador:hover,
+.indicadores-carrusel .indicador.activo {
+    background-color: #5DBBFF;
+}
+
+
+/* =========================================================
+   DATOS RÁPIDOS
+   ========================================================= */
+
+.datos-especie {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 35px;
+
+    border: 1px solid rgba(93, 187, 255, 0.20);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background-color: #101C2C;
+}
+
+.datos-especie div {
+    padding: 25px 20px;
+
+    text-align: center;
+
+    border-right: 1px solid rgba(93, 187, 255, 0.15);
+}
+
+.datos-especie div:last-child {
+    border-right: none;
+}
+
+.datos-especie span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #5DBBFF;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.datos-especie strong {
+    color: #FFFFFF;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   BIODIVERSIDAD
+   ========================================================= */
+
+.biodiversidad {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 100px 30px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(93, 187, 255, 0.15);
+}
+
+.biodiversidad h2 {
+    margin: 15px 0 25px;
+
+    color: #FFFFFF;
+
+    font-size: 2.6rem;
+}
+
+.biodiversidad p:not(.etiqueta) {
+    max-width: 760px;
+    margin: 12px auto;
+
+    color: #B8C0CC;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA FINAL
+   ========================================================= */
+
+.cta-especies {
+    padding: 80px 30px 110px;
+
+    text-align: center;
+}
+
+.cta-especies h2 {
+    margin: 0 0 35px;
+
+    color: #FFFFFF;
+
+    font-size: 2.3rem;
+}
+
+.botones-cta {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .slide-especie {
+        min-height: 500px;
+    }
+
+    .slide-especie > img {
+        width: 55%;
+        height: 500px;
+    }
+
+    .info-slide {
+        width: 45%;
+
+        padding: 40px 35px;
+    }
+
+    .info-slide h3 {
+        font-size: 2rem;
+    }
+
+    .flecha-carrusel {
+        top: 250px;
+    }
+
+    .datos-especie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .datos-especie div:nth-child(2) {
+        border-right: none;
+    }
+
+    .datos-especie div:nth-child(-n+2) {
+        border-bottom: 1px solid rgba(93, 187, 255, 0.15);
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Hero */
+
+    .hero-especies {
+        min-height: 55vh;
+
+        padding: 70px 20px;
+    }
+
+    .hero-especies h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-especies p:not(.etiqueta) {
+        font-size: 1rem;
+    }
+
+
+    /* Introducción */
+
+    .introduccion-especies {
+        padding: 70px 20px;
+    }
+
+    .introduccion-especies h2 {
+        font-size: 2rem;
+    }
+
+
+    /* Especies */
+
+    .especie-mundo {
+        padding: 70px 20px;
+    }
+
+    .cabecera-especie {
+        margin-bottom: 30px;
+    }
+
+    .cabecera-especie h2 {
+        font-size: 2.2rem;
+    }
+
+
+    /* Carrusel vertical */
+
+    .slide-especie.activo {
+        flex-direction: column;
+    }
+
+    .slide-especie {
+        min-height: auto;
+    }
+
+
+    /* Imagen */
+
+    .slide-especie > img {
+        width: 100%;
+        height: 340px;
+
+        object-fit: cover;
+    }
+
+
+    /* Texto */
+
+    .info-slide {
+        width: 100%;
+
+        padding: 35px 30px 45px;
+    }
+
+    .info-slide h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* Flechas sobre la imagen */
+
+    .flecha-carrusel {
+        top: 170px;
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 1.1rem;
+    }
+
+    .flecha-carrusel.anterior {
+        left: 10px;
+    }
+
+    .flecha-carrusel.siguiente {
+        right: 10px;
+    }
+
+
+    /* Datos */
+
+    .datos-especie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Biodiversidad */
+
+    .biodiversidad {
+        padding: 70px 20px;
+    }
+
+    .biodiversidad h2 {
+        font-size: 2rem;
+    }
+
+
+    /* CTA */
+
+    .cta-especies {
+        padding: 60px 20px 80px;
+    }
+
+    .cta-especies h2 {
+        font-size: 1.9rem;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .info-slide p:not(.numero-slide) {
+    font-size: 1.05rem;
+}
+
+.cabecera-especie > p:last-child,
+.introduccion-especies p:not(.etiqueta),
+.biodiversidad p:not(.etiqueta) {
+    font-size: 1rem;
+}
+    .hero-especies h1 {
+        font-size: 2.1rem;
+    }
+
+    .slide-especie > img {
+        height: 280px;
+    }
+
+    .flecha-carrusel {
+        top: 140px;
+    }
+
+    .info-slide {
+        padding: 30px 22px 40px;
+    }
+
+    .info-slide h3 {
+        font-size: 1.6rem;
+    }
+
+    .datos-especie {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-especie div {
+        border-right: none;
+        border-bottom: 1px solid rgba(93, 187, 255, 0.15);
+    }
+
+    .datos-especie div:last-child {
+        border-bottom: none;
+    }
+
+    .botones-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+.info-slide p:not(.numero-slide) {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.numero-slide {
+    font-size: 0.9rem;
+}
+
+.cabecera-especie > p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.introduccion-especies p:not(.etiqueta) {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
 }
