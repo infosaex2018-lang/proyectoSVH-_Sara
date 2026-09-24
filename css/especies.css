@@ -1,0 +1,22 @@
+/* ESPECIES: se conservan cuatro carruseles y sus imágenes originales. */
+.especie-mundo { scroll-margin-top: 20px; }
+.info-slide { padding: 36px 30px; }
+.info-slide h3 { font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.25; }
+.info-slide p:not(.numero-slide) { font-size: 1.125rem; line-height: 1.75; }
+.numero-slide, .datos-especie span, .datos-especie strong { font-size: 1rem; }
+.datos-especie span { letter-spacing: 1px; }
+.hero-especies .etiqueta, .introduccion-especies .etiqueta, .especie-mundo .etiqueta, .biodiversidad .etiqueta { font-size: 1rem; letter-spacing: 2px; }
+/* Área táctil de 44 px; el punto visual sigue siendo pequeño. */
+.indicadores-carrusel { gap: 4px; }
+.indicadores-carrusel .indicador { width: 44px; height: 44px; border: 0; background: transparent; display: grid; place-items: center; }
+.indicadores-carrusel .indicador::after { content: ''; width: 11px; height: 11px; border: 1px solid #5DBBFF; border-radius: 50%; }
+.indicadores-carrusel .indicador.activo, .indicadores-carrusel .indicador:hover { background: transparent; }
+.indicadores-carrusel .indicador.activo::after, .indicadores-carrusel .indicador:hover::after { background: #5DBBFF; }
+.flecha-carrusel { min-width: 44px; min-height: 44px; }
+@media (max-width: 768px) {
+    .info-slide { padding: 28px 22px 36px; }
+    .slide-especie > img { height: 340px; object-fit: contain; }
+    .hero-especies h1 { font-size: clamp(2rem, 7vw, 2.5rem); }
+    .cabecera-especie > p:last-child, .introduccion-especies p:not(.etiqueta), .biodiversidad p:not(.etiqueta) { font-size: 1.0625rem; }
+}
+@media (max-width: 480px) { .slide-especie > img { height: 280px; } }

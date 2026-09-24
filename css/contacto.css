@@ -1,0 +1,11 @@
+/* CONTACTO: formulario demostrativo, sin servicio de envío. */
+.contacto { width: min(100% - 32px, 800px); box-sizing: border-box; }
+.contacto h1 { text-align: center; font-size: clamp(2rem, 6vw, 3rem); }
+.contacto a { color: #5DBBFF; }
+.campo input, .campo textarea { max-width: 100%; font-size: 1rem; }
+.aviso-formulario, #estado-formulario { padding: 16px; border-left: 3px solid #5DBBFF; background: #050C18; }
+#estado-formulario:empty { display: none; }
+.contacto button { min-height: 44px; }
+@media (max-width: 480px) { .contacto { padding: 20px 12px; margin: 32px auto; } }
+/* La regla móvil antigua usaba 0.95rem: mantenemos también aquí 16 px. */
+.contacto p, .contacto label { font-size: 1rem; }

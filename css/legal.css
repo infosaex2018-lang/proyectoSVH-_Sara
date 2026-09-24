@@ -1,0 +1,13 @@
+/* LEGALES: encabezados largos y tabla accesible también en móvil. */
+.legal { overflow-wrap: anywhere; }
+.legal h1 { font-size: clamp(2rem, 6vw, 4rem); line-height: 1.2; }
+.legal h2 { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.4; }
+.legal table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 1rem; }
+.legal th, .legal td { padding: 10px; border: 1px solid #2B3A52; text-align: left; vertical-align: top; }
+@media (max-width: 600px) {
+    /* Cada fila conserva sus etiquetas para leerse sin desplazamiento lateral. */
+    .legal table, .legal tbody, .legal tr, .legal td { display: block; width: 100%; }
+    .legal thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    .legal td::before { content: attr(data-label) ': '; color: #D4AF37; font-weight: bold; }
+    .legal { padding: 20px 12px; }
+}

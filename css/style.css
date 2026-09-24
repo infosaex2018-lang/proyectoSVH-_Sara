@@ -1,3 +1,4 @@
+/* BASE ORIGINAL CONSERVADA. Los ajustes finales se cargan después, desde global.css y el CSS de cada página. */
 body {
     background-color: #08111F;
 }
@@ -1212,7 +1213,7 @@ footer hr {
     background:
         linear-gradient(rgba(8, 17, 31, 0.45),
             rgba(8, 17, 31, 0.95)),
-        url("../imagenes/lumiens.jpg") center / cover no-repeat;
+        url("../imagenes/lumia_oceano.jpg") center / cover no-repeat;
 }
 
 .hero-especies-contenido {
@@ -1242,7 +1243,7 @@ footer hr {
 .mundo-especies .etiqueta,
 .biodiversidad .etiqueta {
     color: #FFFFFF;
-    font-size: 2 rem;
+    font-size: 2rem;
     letter-spacing: 3px;
     font-weight: bold;
     text-transform: uppercase;

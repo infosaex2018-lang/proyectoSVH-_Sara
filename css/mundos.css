@@ -1,0 +1,5 @@
+/* MUNDOS: limitar títulos y mantener las tarjetas originales. */
+h1.titulo { font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1.2; }
+.world { scroll-margin-top: 20px; }
+.world-content { background: linear-gradient(transparent, rgba(8,17,31,.98) 30%); }
+@media (max-width: 480px) { .world-content { padding: 22px; } }
